@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "pride-browser",
+    "version": "1.0.0",
+    "description": "Making things a little more festive for pride month.",
+    "permissions": [
+         "tabs", "activeTab"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "css": ["style.css"],
+            "js": ["script.js"]
+        }
+    ]
+}
